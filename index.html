@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>💪 Antagonistic Muscles – IGCSE Biology</title>
+
+<style>
+    body {
+        font-family: "Comic Sans MS", "Segoe UI", sans-serif;
+        background: linear-gradient(135deg, #fdfbfb, #ebedee);
+        padding: 20px;
+    }
+
+    .card {
+        background: white;
+        border-radius: 20px;
+        padding: 25px;
+        max-width: 800px;
+        margin: auto;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    }
+
+    h1, h2 {
+        text-align: center;
+        color: #ff6f61;
+    }
+
+    .section {
+        background: #f0f8ff;
+        border-radius: 15px;
+        padding: 15px;
+        margin: 15px 0;
+    }
+
+    ul {
+        line-height: 1.8;
+        font-size: 1.05em;
+    }
+
+    .highlight {
+        background: #fff3cd;
+        padding: 10px;
+        border-radius: 10px;
+        margin-top: 10px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .quiz {
+        margin-top: 20px;
+        padding: 15px;
+        background: #e6ffe6;
+        border-radius: 15px;
+    }
+
+    button {
+        background: #ff6f61;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 10px;
+        font-size: 1em;
+        cursor: pointer;
+        margin-top: 10px;
+    }
+
+    button:hover {
+        background: #ff3b2e;
+    }
+
+    .answer {
+        margin-top: 10px;
+        font-weight: bold;
+        color: #2c7a2c;
+    }
+</style>
+</head>
+
+<body>
+
+<div class="card">
+    <h1>💪 Antagonistic Muscles</h1>
+    <p style="text-align:center;">IGCSE Biology – Cute & Easy Summary ✨</p>
+
+    <div class="section">
+        <h2>🤸 Bending the Arm (Flexion)</h2>
+        <ul>
+            <li>💪 <strong>Biceps contracts</strong></li>
+            <li>😌 <strong>Triceps relaxes</strong></li>
+            <li>🦴 Tendon pulls the lower arm bone up</li>
+        </ul>
+        <div class="highlight">
+            📌 Biceps = Agonist | Triceps = Antagonist
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>🧍 Straightening the Arm (Extension)</h2>
+        <ul>
+            <li>💪 <strong>Triceps contracts</strong></li>
+            <li>😌 <strong>Biceps relaxes</strong></li>
+            <li>🦴 Tendon pulls the lower arm bone down</li>
+        </ul>
+        <div class="highlight">
+            📌 Triceps = Agonist | Biceps = Antagonist
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>🧠 Key IGCSE Note</h2>
+        <p style="text-align:center;">
+            ✨ This is called <strong>antagonistic muscle action</strong><br>
+            ✨ Muscles work in <strong>pairs</strong><br>
+            ✨ One contracts while the other relaxes
+        </p>
+    </div>
+
+    <div class="quiz">
+        <h2>📝 Quick Quiz</h2>
+
+        <p>1️⃣ Which muscle contracts when the arm bends?</p>
+        <button onclick="showAnswer('a1')">Show Answer</button>
+        <div id="a1" class="answer"></div>
+
+        <p>2️⃣ What movement is called extension?</p>
+        <button onclick="showAnswer('a2')">Show Answer</button>
+        <div id="a2" class="answer"></div>
+
+        <p>3️⃣ What do we call muscles that work in pairs?</p>
+        <button onclick="showAnswer('a3')">Show Answer</button>
+        <div id="a3" class="answer"></div>
+    </div>
+</div>
+
+<script>
+function showAnswer(id) {
+    const answers = {
+        a1: "✅ Biceps muscle",
+        a2: "✅ Straightening the arm",
+        a3: "✅ Antagonistic muscles"
+    };
+    document.getElementById(id).innerText = answers[id];
+}
+</script>
+
+</body>
+</html>
